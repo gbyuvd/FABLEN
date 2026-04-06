@@ -5,8 +5,6 @@ Standalone module for the FABLEN layer and stack.
 Designed for tasks with boolean or rule-based feature interaction structure
 (parity, digits classification, symbolic reasoning).
 
-For sequence/language model integration, see fablen_lm.py.
-
 Architecture overview
 ---------------------
 Each FABLEN neuron:
@@ -24,6 +22,8 @@ Stacking: layers are connected via standard Pre-LN residual:
     x ← x + FABLENLayer(LayerNorm(x))
 
 Dependencies: torch only.
+
+gbyuvd 2026
 """
 
 import torch
