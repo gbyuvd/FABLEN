@@ -213,7 +213,7 @@ The digits result with diversity initialization reveals a refinement to the earl
 - [difflogic - A Library for Differentiable Logic Gate Networks
 ](https://github.com/Felix-Petersen/difflogic)
 
-## 10. References & Citation
+## 9. References & Citation
 
 If you use this work, please cite this repository and the following papers:
 
@@ -267,7 +267,7 @@ doi = {10.15439/2025F1666}
 }
 ```
 
-### 11 Appendix: Ops Bilinear Coef Table
+### 10 Appendix: Ops Bilinear Coef Table
 
 ```text
     # c0    c1    c2    c3     op name
