@@ -198,7 +198,7 @@ The digits result with diversity initialization reveals a refinement to the earl
 
 **Architecture:**
 
-- **Residual blend ablation:** current implementation uses `x + FABLEN(LN(x))`. Prior experiments used `(x + FABLEN(x)) / 2`. Both reach 99.70% on parity but show different layer-specialization patterns (old: XOR→AND across depth; new: XOR/XNOR distributed throughout). Whether the specialization pattern or task accuracy is the more meaningful comparison point is unresolved.
+- **Residual blend ablation:** current implementation uses `x + FABLEN(LN(x))`. Prior experiments used `(x + FABLEN(x)) / 2`. Both reach ~99% on parity but show different layer-specialization patterns (old: XOR→AND across depth; new: XOR/XNOR distributed throughout). Whether the specialization pattern or task accuracy is the more meaningful comparison point is unresolved.
 - **Diversity initialization scaling:** the slot diversity nudge uses offset `D_{in}/2`. Whether this remains well-calibrated at `D_{in}=512+` is untested; at very large dims the nudge becomes negligible relative to noise.
 - **Sparsemax at larger dims:** sparsity score is 0.91–0.98 at hidden_dim=32–128. Whether sparsemax remains discriminative at dim=512+ is untested.
 
